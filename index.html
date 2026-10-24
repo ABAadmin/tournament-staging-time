@@ -1,3 +1,64 @@
-<div class="time" id="stagingTime">
-  10:30 AM
-</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABA Tournament - Staging Time</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      text-align: center;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      color: #1d4f91;
+      font-size: 32px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+    .card {
+      background: white;
+      padding: 40px 20px;
+      margin: 40px auto;
+      max-width: 500px;
+      border-radius: 16px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+
+    .time {
+      color: #1d4f91;
+      font-size: 64px;
+      font-weight: bold;
+      margin-top: 25px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>ABA Tournament</h1>
+  <h2>Staging Time</h2>
+
+  <div class="card">
+    <h2>Current Staging Time</h2>
+    <div class="time" id="stagingTime"></div>
+  </div>
+
+  <script>
+    // CHANGE ONLY THIS LINE
+    const stagingTime = "10:30 AM";
+
+    document.getElementById("stagingTime").textContent =
+      stagingTime;
+  </script>
+
+</body>
+</html>
